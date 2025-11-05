@@ -1,6 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
+import './index.css';
+
 function Greeting() {
   return (
     <div>
@@ -11,11 +13,11 @@ function Greeting() {
 }
 
 function Message(){
-  return <h1>Hello!, Welcome To React Learning...</h1>
+  return <h1 className="heading">Hello!, Welcome To React Learning...</h1>
 }
 
 function Message1(){
-  return <p>Let's Begin..!</p>
+  return <p className="paragraph">Let's Begin..!</p>
 }
 // function Greeting(){
 //   return React.createElement("div", {}, React.createElement("h2", {}, "Hello welcome to React Learning Class"))
