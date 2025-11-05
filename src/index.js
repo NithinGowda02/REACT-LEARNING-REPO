@@ -1,17 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import { createRoot } from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// function Greeting() {
+//   return (
+//     <div>
+//       <h2>Welcome to React Learning</h2>
+//     </div>
+//   );
+// }
+function Greeting(){
+  return React.createElement("div", {}, React.createElement("h2", {}, "Hello welcome to React Learning Class"))
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const container = document.getElementById('root');
+const roots = createRoot(container);
+roots.render(<Greeting />);
