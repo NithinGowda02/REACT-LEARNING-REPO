@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background-color: aqua;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    text-align: center;
+    font-weight: bold;
+    color: #00ff00;
+    background-color: #fff;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
